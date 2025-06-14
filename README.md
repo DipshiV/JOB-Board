@@ -1,25 +1,49 @@
-# Getting Started with Create React App
+Job Board Portal
+A full-stack Job Board Application where users can register, search & apply for jobs, and admins can post, manage jobs, view applicants, and respond to contact messages.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 Features
+🔐 Role-Based Login & Dashboards
+User Login: Redirects to User Dashboard
 
-## Available Scripts
+Admin Login: Redirects to Admin Dashboard
 
-In the project directory, you can run:
+Uses JWT token authentication with protected routing
 
-### `npm start`
+👤 User Functionalities
+Search job by keywords
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+View job details and apply
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Withdraw application (if status is PENDING)
 
-### `npm test`
+View list of applied jobs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Contact Admin via Contact Us form
 
-### `npm run build`
+👨‍💼 Admin Functionalities
+Add a new job posting
+
+View all posted jobs
+
+View applicants for each job
+
+Change applicant status (PENDING → ACCEPTED / REJECTED)
+
+Download applicant resume
+
+Delete job (only if no user has applied)
+
+View messages sent via Contact Us form
+
+🧱 Tech Stack:
+
+| Frontend         | Backend               |
+| ---------------- | --------------------- |
+| React.js         | Spring Boot           |
+| React-Bootstrap  | Spring Security (JWT) |
+| Axios            | MySQL                 |
+| React Router DOM | Hibernate/JPA         |
+| Formik & Yup     | Lombok                |
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
